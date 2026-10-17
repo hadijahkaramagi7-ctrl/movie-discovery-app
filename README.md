@@ -1,16 +1,37 @@
-# React + Vite
+# MovieBox - Movie Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive movie discovery application built with React, Vite, and Material UI. Users can browse trending movies and TV shows, search for titles, view detailed information, and save items to a personal watchlist.
 
-Currently, two official plugins are available:
+**Live Application Link:** [https://movie-discovery-app-nu-flax.vercel.app/](https://movie-discovery-app-nu-flax.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- React (Vite)
+- Material UI (MUI)
+- React Router
+- Axios
+- TMDB API
 
-## React Compiler
+## Features
+- **Home Page:** Displays Trending, Popular Movies, and Popular TV Shows.
+- **Search:** Search for movies and TV shows by title in real-time.
+- **Details Modal:** Click any poster to view its overview, rating, release date, and genres.
+- **Watchlist:** Add or remove items. Saved to `localStorage` so it persists on refresh.
+- **Responsive Design:** Works on desktop, tablet, and mobile screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run Locally
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Create a `.env` file in the root directory and add your TMDB API key:
+   `VITE_TMDB_API_KEY=your_api_key_here`
+4. Run `npm run dev` to start the development server.
+5. Open `http://localhost:5173` in your browser.
 
-## Expanding the ESLint configuration
+## Screenshots
+### Homepage
+![Homepage](./screenshots/home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Movie Details
+![Details View](./screenshots/details.png)
+
+## API Attribution
+This product uses the TMDB API but is not endorsed or certified by TMDB.
